@@ -5,7 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --color-hover: #444;
+  --color-secondary: #85c441;
+  --color-body: #212529;
+}
+/* Typography */
 @font-face {
   font-family: iransans;
   font-style: normal;
@@ -20,11 +25,19 @@
   src: url("../fonts/IRANSansWeb_Medium.ttf");
   src: url("../fonts/IRANSansWeb_Medium.woff");
 }
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
 body {
   font-size: 62.5%;
   font-family: iransans;
+  color: var(--color-body);
 }
-a {
+
+/* a {
   text-decoration: none;
 }
 #header {
@@ -52,4 +65,4 @@ a {
 .icon {
   width: 40px;
   height: 40px;
-}
+} */
