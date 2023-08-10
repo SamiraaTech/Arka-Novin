@@ -4,40 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arka Novin</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="contianer">
       <header id="header">
-          <nav class="navbar collapsible">
-            <a href="#"><img src="./images/logo-dark.png"/></a>
-            <svg class="icon icon--white nav__toggler">
-                <use xlink:href="images/sprite.svg#menu"></use>
-              </svg>
-            <ul>
-                <li><a href="#">صفحه اصلی</a></li>
-                <li><a href="#">نماکاران آرکانوین</a></li>
-                <li><a href="#">محصولات</a></li>
-                <li><a href="#">خدمات مهندسی</a></li>
-                <li><a href="#">پروژه ها</a></li>
-                <li><a href="#">اخبار و مقالات</a></li>
-                <li><a href="#">تماس با ما</a></li>
-            </ul>
-            <span class="search-icon">
-                <i class="fa fa-search"></i>
-                <input type="search" class="search">
-            </span>
-        </nav>
-            
+        <nav class="navbar collapsible">
+          <a class="navbar__brand" href="#"
+            ><img src="./images/logo-dark.png"
+          /></a>
+          <ul class="list nav__list">
+            <li><a href="#">صفحه اصلی</a></li>
+            <li><a href="#">نماکاران آرکانوین</a></li>
+            <li><a href="#">محصولات</a></li>
+            <li><a href="#">خدمات مهندسی</a></li>
+            <li><a href="#">پروژه ها</a></li>
+            <li><a href="#">اخبار و مقالات</a></li>
+            <li><a href="#">تماس با ما</a></li>
+          </ul>
+          <svg class="icon nav__toggler icon--white">
+            <use xlink:href="images/sprite.svg#icons8-hamburger-menu"></use>
+          </svg>
+          <span class="input-group">
+            <input type="search" class="input input--search" />
+            <button class="btn btn--search">
+              <a href="#">
+                <svg class="icon icon--white">
+                  <use xlink:href="images/sprite.svg#icons8-search"></use>
+                </svg>
+              </a>
+            </button>
+          </span>
         </nav>
       </header>
       <main></main>
       <footer></footer>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
