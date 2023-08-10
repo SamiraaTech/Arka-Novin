@@ -6,8 +6,23 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: iransans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/IRANSansWeb.ttf");
+  src: url("../fonts/IRANSansWeb.woff");
+}
+@font-face {
+  font-family: iransans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/IRANSansWeb_Medium.ttf");
+  src: url("../fonts/IRANSansWeb_Medium.woff");
+}
 body {
   font-size: 62.5%;
+  font-family: iransans;
 }
 a {
   text-decoration: none;
@@ -17,7 +32,6 @@ a {
   height: 100vh;
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
 }
 .navbar ul {
   display: flex;
@@ -27,7 +41,15 @@ a {
 }
 .navbar ul li a {
   color: #fff;
+  font-size: 0.9rem;
+}
+.search-icon .search {
+  visibility: hidden;
 }
 .search {
   align-self: flex-start;
+}
+.icon {
+  width: 40px;
+  height: 40px;
 }

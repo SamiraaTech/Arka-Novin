@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arka Novin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="contianer">
       <header id="header">
-        <a href="#"><img src="./images/logo-dark.png"/></a>
-        <nav class="navbar">
+          <nav class="navbar collapsible">
+            <a href="#"><img src="./images/logo-dark.png"/></a>
+            <svg class="icon icon--white nav__toggler">
+                <use xlink:href="images/sprite.svg#menu"></use>
+              </svg>
             <ul>
                 <li><a href="#">صفحه اصلی</a></li>
                 <li><a href="#">نماکاران آرکانوین</a></li>
@@ -20,8 +28,11 @@
                 <li><a href="#">اخبار و مقالات</a></li>
                 <li><a href="#">تماس با ما</a></li>
             </ul>
+            <span class="search-icon">
+                <i class="fa fa-search"></i>
+                <input type="search" class="search">
+            </span>
         </nav>
-        <span class="search-icon"><input type="search" class="search"></span>
             
         </nav>
       </header>
