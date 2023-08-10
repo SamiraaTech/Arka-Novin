@@ -30,13 +30,31 @@
   background: var(--color-primary);
   color: #fff;
 }
-
-body {
+html {
   font-size: 62.5%;
-  font-family: iransans;
+}
+body {
+  font-family: iransans, Arial, Helvetica, sans-serif;
   color: var(--color-body);
 }
 
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 4.1rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
 /* a {
   text-decoration: none;
 }
