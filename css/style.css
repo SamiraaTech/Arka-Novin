@@ -64,6 +64,9 @@ h3 {
 h4 {
   font-size: 1.5rem;
 }
+a {
+  color: var(--color-body);
+}
 /* Links */
 a {
   text-decoration: none;
@@ -128,6 +131,20 @@ a {
     display: block;
   }
 }
+/* Blocks */
+.block {
+  margin: 0 3.4rem;
+}
+.block__title {
+  margin-bottom: 4rem;
+  font-family: iransans-light;
+  font-size: 2.2rem;
+}
+.block img {
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
 /* Hero */
 #header {
   background: url(../images/project-slide.png) no-repeat center center/cover;
@@ -135,11 +152,13 @@ a {
   height: 100vh;
 }
 /* Showcase */
-.block.showcase {
+.showcase {
   background-color: var(--color-bg);
+}
+.showcase .block {
   display: flex;
   justify-content: space-between;
-  padding: 3.5rem 3rem;
+  padding: 3.5rem 0;
 }
 .showcase__desc {
   max-width: 45%;
@@ -157,13 +176,49 @@ a {
   justify-content: space-between;
   gap: 5rem;
 }
-.showcase__logos img {
-  margin-bottom: 2.5rem;
-}
-.showcase__title {
-  margin-bottom: 4rem;
-  font-family: iransans-light;
-  font-size: 2.2rem;
-}
 
 /* Plan Block */
+.plans {
+  margin-top: 4rem;
+}
+.card {
+  max-width: 33.33%;
+  padding: 1.5rem;
+}
+.card__img img {
+  width: 100%;
+}
+.card__img {
+  position: relative;
+}
+.card__img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 20, 6, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.card__img::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/icon-arrow-left.png) no-repeat center center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  bottom: 1.5rem;
+  left: 2.5rem;
+}
+.card__link:hover .card__img::before,
+.card__link:hover .card__img::after {
+  opacity: 1;
+}
+
+.card__desc h4 {
+  padding-right: 2.5rem;
+  font-style: 1.7rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+}
