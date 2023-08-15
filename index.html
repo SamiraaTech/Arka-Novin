@@ -1,317 +1,402 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arka Novin</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header id="header">
-        <nav class="navbar collapsible block">
-          <a class="navbar__brand" href="#"
-            ><img src="./images/logo-dark.png"
-          /></a>
-          <ul class="list nav__list collapsible__content">
-            <li class="nav__item"><a href="#">صفحه اصلی</a></li>
-            <li class="nav__item"><a href="#">نماکاران آرکانوین</a></li>
-            <li class="nav__item"><a href="#">محصولات</a></li>
-            <li class="nav__item"><a href="#">خدمات مهندسی</a></li>
-            <li class="nav__item"><a href="#">پروژه ها</a></li>
-            <li class="nav__item"><a href="#">اخبار و مقالات</a></li>
-            <li class="nav__item"><a href="#">تماس با ما</a></li>
-          </ul>
-          <svg class="icon nav__toggler icon--white">
-            <use xlink:href="images/sprite.svg#icons8-hamburger-menu"></use>
-          </svg>
-          <span class="input-group">
-            <input type="search" class="input input--search" />
-            <button class="btn btn--search">
-              <a href="#">
-                <svg class="icon icon--white">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arka Novin</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header id="header">
+      <nav class="navbar collapsible block">
+        <a class="navbar__brand" href="#"><img src="./images/logo-dark.png" /></a>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">صفحه اصلی</a></li>
+          <li class="nav__item"><a href="#">نماکاران آرکانوین</a></li>
+          <li class="nav__item"><a href="#">محصولات</a></li>
+          <li class="nav__item"><a href="#">خدمات مهندسی</a></li>
+          <li class="nav__item"><a href="#">پروژه ها</a></li>
+          <li class="nav__item"><a href="#">اخبار و مقالات</a></li>
+          <li class="nav__item"><a href="#">تماس با ما</a></li>
+        </ul>
+        <svg class="icon nav__toggler icon--white">
+          <use xlink:href="images/sprite.svg#icons8-hamburger-menu"></use>
+        </svg>
+        <span class="input-group">
+
+          <button class="btn btn--search">
+            <a href="#">
+              <svg class="icon icon--white">
+                <use xlink:href="images/sprite.svg#icons8-search"></use>
+              </svg>
+            </a>
+          </button>
+
+        </span>
+      </nav>
+      <div class="header__slider">
+        <div class="slide active" data-num="1">
+          <img src="images/project-slide.png" class="banner" alt="banner" />
+        </div>
+        <div class="slide" data-num="2">
+          <img src="images/slider-1441036.jpg" class="banner" alt="banner1">
+        </div>
+        <div class="slide" data-num="3">
+          <img src="images/slider-1441037.jpg" class="banner" alt="banner2">
+        </div>
+        <div class="slide" data-num="4">
+          <img src="images/slider-1441032.jpg" class="banner" alt="banner3">
+        </div>
+
+        <div class="list block">
+          <div class="single active" data-num="1">
+            <div class="desc">
+              <img src="/images/project-slide.png" alt="ساختمان اداری البرز">
+              <h5>ساختمان اداری البرز</h5>
+              <svg class="icon icon--white">
+                <use xlink:href="#icon-arrow-chevron-left"></use>
+              </svg>
+            </div>
+            <div class="line">
+              <span></span>
+            </div>
+          </div>
+
+          <div class="single" data-num="2">
+            <div class="desc">
+              <img src="/images/slider-1441032.jpg" alt="بهشت نیاتوس">
+              <h5>بهشت نیاتوس</h5>
+              <svg class="icon icon--white">
+                <use xlink:href="#icon-arrow-chevron-left"></use>
+              </svg>
+            </div>
+            <div class="line">
+              <span></span>
+            </div>
+          </div>
+
+          <div class="single" data-num="3">
+            <div class="desc">
+              <img src="/images/slider-1441036.jpg" alt="تابان">
+              <h5>تابان</h5>
+              <svg class="icon icon--white">
+                <use xlink:href="#icon-arrow-chevron-left"></use>
+              </svg>
+            </div>
+            <div class="line">
+              <span></span>
+            </div>
+          </div>
+
+          <div class="single" data-num="4">
+            <div class="desc">
+              <img src="/images/slider-1441037.jpg" alt="ویلای عمار">
+              <h5>ویلای عمار</h5>
+              <svg class="icon icon--white">
+                <use xlink:href="#icon-arrow-chevron-left"></use>
+              </svg>
+            </div>
+            <div class="line">
+              <span></span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="search-box">
+        <div class="">
+          <span class="btnClose">×</span>
+          <form action="/" method="get">
+            <div>
+              <div class="searchinput">
+                <input type="text" class="input input--search" name="q" placeholder="جستجو کنید...">
+                <svg class="icon">
                   <use xlink:href="images/sprite.svg#icons8-search"></use>
                 </svg>
-              </a>
-            </button>
-          </span>
-        </nav>
-        <div class="header__slider block">
-          <!-- <p>We Committed to the best!</p> -->
-        </div>
-      </header>
-      <main id="main"> 
-        <section class="showcase">
-          <div class="block">
-            <div class="showcase__desc">
-              <p>
-                <strong> گروه صنعتی نماکاران </strong> مجموعه ای حرفه ای است که
-                با نگاهی فرا تخصصی به هنر معماری در سال 1386 تاسیس شده است و در
-                همین مدت کوتاه توانسته با ارائه مشاوره , طراحی و اجرا ی پروژه
-                های مختلف ساخت و اجرای نمای ساختمان , خدمات ارزنده و شایسته ای
-                را به مشتریان خود ارائه کند.
-                <br />
-                این گروه توانسته است با بهره گیری از دانش روز و با قابلیت طراحی
-                و اجرای نما های مدرن از جمله کرتین وال , درب و پنجره آلومینیومی
-                و سرامیک بهترین پیشنهادات را در سطح استاندارد های جهانی به
-                مشتریان خود عرضه نماید
-              </p>
+              </div>
             </div>
-            <div class="showcase__brands">
-              <h4 class="block__title">شرکای تجاری</h4>
-              <div class="showcase__logos">
-                <div class="first--brand">
-                  <img src="./images/1.png" alt="first brand" />
-                  <p>
-                    کسب گواهینامه استاندارد ملی توسط این مجموعه نشان دهنده این
-                    واقعیت
-                  </p>
-                </div>
-                <div class="second--brand">
-                  <img src="./images/2.png" alt="second brand" />
-                  <p>
-                    کسب گواهینامه استاندارد ملی توسط این مجموعه نشان دهنده این
-                    واقعیت
-                  </p>
-                </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="showcase">
+        <div class="block">
+          <div class="showcase__desc">
+            <p>
+              <strong> گروه صنعتی نماکاران </strong> مجموعه ای حرفه ای است که
+              با نگاهی فرا تخصصی به هنر معماری در سال 1386 تاسیس شده است و در
+              همین مدت کوتاه توانسته با ارائه مشاوره , طراحی و اجرا ی پروژه
+              های مختلف ساخت و اجرای نمای ساختمان , خدمات ارزنده و شایسته ای
+              را به مشتریان خود ارائه کند.
+              <br />
+              این گروه توانسته است با بهره گیری از دانش روز و با قابلیت طراحی
+              و اجرای نما های مدرن از جمله کرتین وال , درب و پنجره آلومینیومی
+              و سرامیک بهترین پیشنهادات را در سطح استاندارد های جهانی به
+              مشتریان خود عرضه نماید
+            </p>
+          </div>
+          <div class="showcase__brands">
+            <h4 class="block__title">شرکای تجاری</h4>
+            <div class="showcase__logos">
+              <div class="first--brand">
+                <img src="./images/1.png" alt="first brand" />
+                <p>
+                  کسب گواهینامه استاندارد ملی توسط این مجموعه نشان دهنده این
+                  واقعیت
+                </p>
+              </div>
+              <div class="second--brand">
+                <img src="./images/2.png" alt="second brand" />
+                <p>
+                  کسب گواهینامه استاندارد ملی توسط این مجموعه نشان دهنده این
+                  واقعیت
+                </p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="block plans">
-          <h4 class="block__title">شوکو</h4>
+      <section class="block plans">
+        <h4 class="block__title">شوکو</h4>
 
-          <div class="plans__block">
-            <div class="card">
-              <a class="card__link" href="#">
-                <div class="card__img card__img--hover">
-                  <img src="./images/cat1.png" alt="doors & windows" />
-                </div>
-                <div class="card__desc">
-                  <h4>سیستم های درب و پنجره</h4>
-                </div>
-              </a>
-            </div>
-            <div class="card">
-              <a class="card__link" href="#">
-                <div class="card__img card__img--hover">
-                  <img src="./images/cat2.png" alt="doors & windows" />
-                </div>
-                <div class="card__desc">
-                  <h4>سیستم های درب و پنجره</h4>
-                </div>
-              </a>
-            </div>
-            <div class="card">
-              <a class="card__link" href="#">
-                <div class="card__img card__img--hover">
-                  <img src="./images/cat3.png" alt="doors & windows" />
-                </div>
-                <div class="card__desc">
-                  <h4>سیستم های درب و پنجره</h4>
-                </div>
-              </a>
-            </div>
+        <div class="plans__block">
+          <div class="card">
+            <a class="card__link" href="#">
+              <div class="card__img card__img--hover">
+                <img src="./images/cat1.png" alt="doors & windows" />
+              </div>
+              <div class="card__desc">
+                <h4>سیستم های درب و پنجره</h4>
+              </div>
+            </a>
           </div>
-        </section>
-        <section class="block plans">
-          <h4 class="block__title">اوراما</h4>
-          <div class="plans__block">
-            <div class="card">
-              <a class="card__link" href="#">
-                <div class="card__img card__img--hover">
-                  <img src="./images/cat4.png" alt="doors & windows" />
-                </div>
-                <div class="card__desc">
-                  <h4>سیستم های درب و پنجره</h4>
-                </div>
-              </a>
-            </div>
-            <div class="card">
-              <a class="card__link" href="#">
-                <div class="card__img card__img--hover">
-                  <img src="./images/cat5.png" alt="doors & windows" />
-                </div>
-                <div class="card__desc">
-                  <h4>سیستم های درب و پنجره</h4>
-                </div>
-              </a>
-            </div>
+          <div class="card">
+            <a class="card__link" href="#">
+              <div class="card__img card__img--hover">
+                <img src="./images/cat2.png" alt="doors & windows" />
+              </div>
+              <div class="card__desc">
+                <h4>سیستم های درب و پنجره</h4>
+              </div>
+            </a>
           </div>
-        </section>
+          <div class="card">
+            <a class="card__link" href="#">
+              <div class="card__img card__img--hover">
+                <img src="./images/cat3.png" alt="doors & windows" />
+              </div>
+              <div class="card__desc">
+                <h4>سیستم های درب و پنجره</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="block plans">
+        <h4 class="block__title">اوراما</h4>
+        <div class="plans__block">
+          <div class="card">
+            <a class="card__link" href="#">
+              <div class="card__img card__img--hover">
+                <img src="./images/cat4.png" alt="doors & windows" />
+              </div>
+              <div class="card__desc">
+                <h4>سیستم های درب و پنجره</h4>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a class="card__link" href="#">
+              <div class="card__img card__img--hover">
+                <img src="./images/cat5.png" alt="doors & windows" />
+              </div>
+              <div class="card__desc">
+                <h4>سیستم های درب و پنجره</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <section class="block projects">
-          <h2>پروژه ها</h2>
-           <div class="grids">
-             <div class="pro--card lg">
-              <a class="pro__lg" href="#">
-                <div class="card__img--hover"><img src="./images/project1.png" alt="" /></div>
-                <div class="pro__info">
-                  <h3>برج اداری و تجاری میکاناتس</h3>
-                  <p>
-                    پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
-                    UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
-                    نماکاران در ایران میباشد.
-                  </p>
-                </div>
-              </a>
-             </div> 
-             
-            <div class="pro--card xs">
-              <a class="pro__link" href="#">
+      <section class="block projects">
+        <h2>پروژه ها</h2>
+        <div class="grids">
+          <div class="pro--card lg first-child">
+            <a class="pro__lg" href="#">
+              <div class="card__img--hover"><img src="./images/pict0301.jpg" alt="" /></div>
+              <div class="pro__info">
+                <h3>برج اداری و تجاری میکاناتس</h3>
+                <p>
+                  پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
+                  UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
+                  نماکاران در ایران میباشد.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="pro--card xs second-child">
+            <a class="pro__link" href="#">
               <h4>عنوان</h4>
               <p>
                 پروژه ادار ی البرز میرداماد متشکل از کرتین وال با سیستم 50 GE ,
                 سرامیک و ورق سالید آلومینیوم می‌باشد. این ساختمان با ارتفاع 110
                 متر جزو شاخص‌ترین پروژه‌های آن منطقه می‌باشد.
               </p>
-                </a>
-             </div>
-             <div class="pro--card lg">
-              <a class="pro__lg" href="#">
-                <div class="card__img--hover"><img src="./images/pict5.jpg" alt="" /></div>
-                <div class="pro__info">
-                  <h3>برج اداری و تجاری میکاناتس</h3>
-                  <p>
-                    پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
-                    UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
-                    نماکاران در ایران میباشد.
-                  </p>
-                </div>
-              </a>
-             </div>
-            
-             <div class="pro--card sm">
-              <a class="pro__sm" href="#">
-                <div class="card__img--hover"><img src="./images/project4.png" alt="" /></div>
-                <div class="pro__info">
-                  <h3>برج اداری و تجاری میکاناتس</h3>
-                  <p>
-                    پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
-                    UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
-                    نماکاران در ایران میباشد.
-                  </p>
-                </div>
-              </a>
-             </div>
-             <div class="pro--card lg">
-              <a class="pro__lg" href="#">
-                <div class="card__img--hover"><img src="./images/project2.png" alt="" /></div>
-                <div class="pro__info">
-                  <h3>برج اداری و تجاری میکاناتس</h3>
-                  <p>
-                    پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
-                    UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
-                    نماکاران در ایران میباشد.
-                  </p>
-                </div>
-              </a>
-             </div>
-            <div class="pro--card sm">
-              <a class="pro__sm" href="#">
-                <div class="card__img--hover"><img src="./images/project2.png" alt="" /></div>
-                <div class="pro__info">
-                  <h3>برج اداری و تجاری میکاناتس</h3>
-                  <p>
-                    پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
-                    UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
-                    نماکاران در ایران میباشد.
-                  </p>
-                </div>
-              </a>
-            </div>
-            <div class="pro--card xs">
-              <a class="pro__link" href="#">
-                <h4>عنوان</h4>
+            </a>
+          </div>
+          <div class="pro--card lg third-child">
+            <a class="pro__lg" href="#">
+              <div class="card__img--hover"><img src="./images/pict530.jpg" alt="" /></div>
+              <div class="pro__info">
+                <h3>برج اداری و تجاری میکاناتس</h3>
                 <p>
-                  پروژه ادار ی البرز میرداماد متشکل از کرتین وال با سیستم 50 GE ,
-                  سرامیک و ورق سالید آلومینیوم می‌باشد. این ساختمان با ارتفاع 110
-                  متر جزو شاخص‌ترین پروژه‌های آن منطقه می‌باشد.
+                  پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
+                  UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
+                  نماکاران در ایران میباشد.
                 </p>
-              </a>
-             </div>
-            <div class="pro--card sm">
-              <a class="pro__sm" href="#">
+              </div>
+            </a>
+          </div>
 
-                <div class="card__img--hover"><img src="./images/project2.png" alt="" /></div>
-                <div class="pro__info">
-                  <h3>برج اداری و تجاری میکاناتس</h3>
-                  <p>
-                    پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
-                    UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
-                    نماکاران در ایران میباشد.
-                  </p>
-                </div>
-              </a>
-            </div>
-            
-                       
-            <div class="pro--card xs">
-              <a class="pro__link" href="#">
-                <h4>عنوان</h4>
+          <div class="pro--card sm fourth-child">
+            <a class="pro__sm" href="#">
+              <div class="card__img--hover"><img src="./images/pict53.jpg" alt="" /></div>
+              <div class="pro__info">
+                <h3>برج اداری و تجاری میکاناتس</h3>
                 <p>
-                  پروژه ادار ی البرز میرداماد متشکل از کرتین وال با سیستم 50 GE ,
-                  سرامیک و ورق سالید آلومینیوم می‌باشد. این ساختمان با ارتفاع 110
-                  متر جزو شاخص‌ترین پروژه‌های آن منطقه می‌باشد.
+                  پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
+                  UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
+                  نماکاران در ایران میباشد.
                 </p>
-              </a>
-            </div>
-           </div>
-        </section>
+              </div>
+            </a>
+          </div>
+          <div class="pro--card lg fifth-child">
+            <a class="pro__lg" href="#">
+              <div class="card__img--hover"><img src="./images/pict130.jpg" alt="" /></div>
+              <div class="pro__info">
+                <h3>برج اداری و تجاری میکاناتس</h3>
+                <p>
+                  پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
+                  UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
+                  نماکاران در ایران میباشد.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="pro--card sm sixth-child">
+            <a class="pro__sm" href="#">
+              <div class="card__img--hover"><img src="./images/pict5.jpg" alt="" /></div>
+              <div class="pro__info">
+                <h3>برج اداری و تجاری میکاناتس</h3>
+                <p>
+                  پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
+                  UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
+                  نماکاران در ایران میباشد.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="pro--card xs seventh-child">
+            <a class="pro__sm" href="#">
 
-      </main>
-      
-      <footer>
-        <section class=" footer">
-          <div class="footer__blocks block">
-            <div class="footer__block address--col">
-              <h5>آدرس ما</h5>
-              <h5>آدرس دفتر تهران</h5>
-              <p>زعفرانیه، انتهای خیابان ثارالله، پلاک 45، طبقه 2</p>
-            </div>
-            <div class="footer__block contact--col">
-              <h5>تماس با ما</h5>
-              <h5>تلفن دفتر تهران</h5>
-              <p>۰۲۱۷۴۱۳۰۰۰</p>
-              <p></p>
-            </div>
-            <div class="footer__block social--col">
-              <h5>شبکه های اجتماعی</h5>
-              <ul class="footer__list">
-                <li><a href="#">
+              <div class="card__img--hover"><img src="./images/project4.png" alt="" /></div>
+              <div class="pro__info">
+                <h3>برج اداری و تجاری میکاناتس</h3>
+                <p>
+                  پروژه میکا‌ناتس با 7000 متر مربع کرتین وال یونیتایز با سیستم
+                  UCW 72 DB و سرامیک از طرح های بسیار خاص و پر جالش‌ترین پروژه
+                  نماکاران در ایران میباشد.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="pro--card sm eighth-child">
+            <a class="pro__link" href="#">
+              <h4>عنوان</h4>
+              <p>
+                پروژه ادار ی البرز میرداماد متشکل از کرتین وال با سیستم 50 GE ,
+                سرامیک و ورق سالید آلومینیوم می‌باشد. این ساختمان با ارتفاع 110
+                متر جزو شاخص‌ترین پروژه‌های آن منطقه می‌باشد.
+              </p>
+            </a>
+
+          </div>
+
+
+          <div class="pro--card xs nineth-child">
+            <a class="pro__link" href="#">
+              <h4>عنوان</h4>
+              <p>
+                پروژه ادار ی البرز میرداماد متشکل از کرتین وال با سیستم 50 GE ,
+                سرامیک و ورق سالید آلومینیوم می‌باشد. این ساختمان با ارتفاع 110
+                متر جزو شاخص‌ترین پروژه‌های آن منطقه می‌باشد.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <section class=" footer">
+        <div class="footer__blocks block">
+          <div class="footer__block address--col">
+            <h5>آدرس ما</h5>
+            <h5>آدرس دفتر تهران</h5>
+            <p>زعفرانیه، انتهای خیابان ثارالله، پلاک 45، طبقه 2</p>
+          </div>
+          <div class="footer__block contact--col">
+            <h5>تماس با ما</h5>
+            <h5>تلفن دفتر تهران</h5>
+            <p>۰۲۱۷۴۱۳۰۰۰</p>
+            <p></p>
+          </div>
+          <div class="footer__block social--col">
+            <h5>شبکه های اجتماعی</h5>
+            <ul class="footer__list">
+              <li><a href="#">
                   <svg class="icon">
                     <use xlink:href="images/sprite.svg#icons8-whatsapp"></use>
                   </svg>
                 </a></li>
-                <li><a href="#"><svg class="icon">
-                  <use xlink:href="images/sprite.svg#icons8-facebook"></a></use>
+              <li><a href="#"><svg class="icon">
+                    <use xlink:href="images/sprite.svg#icons8-facebook"></a></use>
                 </svg> </li>
-                <li><a href="#"><svg class="icon">
-                  <use xlink:href="images/sprite.svg#icons8-instagram"></use>
-                </svg></a></li>
-                <li><a href="#"><svg class="icon">
-                  <use xlink:href="images/sprite.svg#icons8-facebook-circled"></use>
-                </svg></a> </li>
-              </ul>
-            </div>
-            <div class="footer__block brands--col">
-              <img src="./images/brands.png" alt="">
-            </div>
+              <li><a href="#"><svg class="icon">
+                    <use xlink:href="images/sprite.svg#icons8-instagram"></use>
+                  </svg></a></li>
+              <li><a href="#"><svg class="icon">
+                    <use xlink:href="images/sprite.svg#icons8-facebook-circled"></use>
+                  </svg></a> </li>
+            </ul>
           </div>
-        </section>
-        <section class="copyright">
-          <div class="block">
+          <div class="footer__block brands--col">
+            <img src="./images/brands.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <div class="block">
           <a href="#">
-          طراحی سایت و بهینه سازی سایت
-          <img src="img/namasite.png" alt="">
+            طراحی سایت و بهینه سازی سایت
+            <img src="img/namasite.png" alt="">
           </a>
-          </div>
-          </section>
-      </footer>
-    </div>
-    </div>
-    <script src="js/main.js"></script>
-  </body>
+        </div>
+      </section>
+    </footer>
+  </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
